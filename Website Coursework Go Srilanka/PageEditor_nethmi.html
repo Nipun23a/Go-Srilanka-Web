@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+body{
+    background-image: url('image3.svg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: initial
+}
+header {
+            background-color: lightgray;
+            color: black;
+            padding: 20px;
+			text-align: center;
+        }
+
+        nav {
+            background-color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            display: inline;
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        nav a:hover {
+            background-color: white;
+        }
+.container{
+    width: 100%;
+}
+.subcontainer{
+    
+    margin-left: 100px;
+    margin-top: 100px;
+    display: flex;
+    gap: 300px;
+}
+.editor-card{
+    background: rgba(0, 0, 0, 0.5);
+    width: 305px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px;
+    opacity: 1;
+    transition:0.3s ease opacity, 0.7s ease transform, 0.5s ease color;
+}
+.task-card{
+    background: rgba(0, 0, 0, 0.5);
+    width: 305px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px; 
+    opacity: 1;
+    transition:0.3s ease opacity, 0.7s ease transform, 0.5s ease color;
+}
+.img-container{
+    align-items: center;
+    background-image: url("images/WhatsApp Image 2022-09-29 at 12.26.11 PM(1).jpeg");
+    display: inline-block;
+    width: 170px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    margin-top: 10px;
+}
+.editor-class{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article-text{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.social-links-nethmi{
+    display: flex;
+    color: black;
+}
+.social-links-nethmi a{
+    margin: 15px;
+    transform: translateY(25px);
+    visibility: hidden;
+   
+}
+.social-links-nethmi a:nth-child(1){
+    transition-duration: 0.5s;
+}
+.social-links-nethmi a:nth-child(2){
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+.social-links-nethmi a:nth-child(3){
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+.social-links-nethmi:hover  a {
+    transform: translateY(3) translate3d(4) translateX(3);
+    visibility: visible;
+}
+.social-links-nethmi i{
+    cursor: pointer;
+    transition-duration: 1s;
+    color: white;
+}
+.task-card h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+.task-card h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+
+}
+.task-card li{
+    font-size: 15px;
+    color: white;
+    list-style-type: none;
+}
+
+
+.task-card:hover i{
+    color:orange;
+}
+.task-card:hover{
+    cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+.editor-card:hover{
+    cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serandib-Nethmi.</title>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+        <div class="logo">
+            <img src="logo.png" class="logo_pic">
+            
+            
+        </div>
+        <ul class="navigationbar">
+            <a href="home1.html"> Home </a>
+            <a href="feedback.html">Queries</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="#">Sitemap</a>
+            <a href="New folder (2)/Gallery.html">Photo Gellery</a>
+            <a href="Store.html">Store</a>
+            <a href="#">Contact Us</a>
+            <a href="login.html">Login</a>
+            <i class="fa-solid fa-bag-shopping fa-lg" style="color: #ffffff;"></i>
+        </ul>
+    </header>
+    <div class="conatainer">
+        <div class="subcontainer">
+            <div class="editor-card">
+                <div class="img-container"></div>
+                    <br><br>
+                    <div class="editor-class">Nethmi Thenuwara.</div>
+                    <div class="article-text">
+                        1<sup>st</sup>Year&nbsp;,&nbsp; Software Engineering
+                        <br>
+                        Serandib&nbsp;,&nbsp;Student Role 2
+                        <br><br>
+                        <small>University of Westminster<br>Informatics Institute of Technology</small>
+                    </div>
+                    <br><br><br>
+                    <div class="social-links-nethmi">
+                        <i class="fa-brands fa-facebook fa-lg "><a href="https://www.facebook.com/profile.php?id=100006345494739"></a></i>
+                        <i class="fa-brands fa-instagram fa-lg"><a href="https://www.instagram.com/nipuna_23/"></a></i> 
+                        <i class="fa-brands fa-linkedin fa-lg"><a href="https://www.linkedin.com/in/nipuna-prabashwara-673b82258/"></a></i>
+                    </div>
+                </div>
+                <div class="task-card">
+                    <h2>Subject:Tourism<br><br>Tasks-</h2>
+                    <h3> <i> Main (Home) Page and Navigation bar included in all pages </i> </h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Css Animations</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Validated</li>
+                    </ul>
+                    <h3> <i>Comments Form </i> </h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check fa-lg check " style="color: #ffffff;"></i>&nbsp;CSS Animations</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Additional Interactivity</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Pages Validated</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;JavaScript for Comments Form</li>
+                    </ul>
+                    <h3><i>Additional Page</i></h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Write A Article About Adam's Peak.</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Additional Interactivity</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Validated</li>
+						<li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;JavaScript</li>
+                    </ul>
+                    <h3><i>Others</i></h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;External CSS</li>
+                        <li><i class="fa-solid fa-check fa-lg check" style="color: #ffffff;"></i>&nbsp;Extra Content Page</li>
+						<li><i class="fa-solid fa-check fa-lg check" style="color: £ffffff;"></i>&nbsp;Web Application Integration</i>
+                    </ul>
+                    
+                </div>
+
+    </div>
+    </div>
+    <div class="end-home">
+        <div class="footer_container">
+            <div class="footer_row">
+                <div class="footer_col">
+                    <h4>Company</h4>
+                    <ul class="footer_ul">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="policy.html">Our Service</a></li>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Get Help</h4>
+                    <ul class="footer_ul">
+                        <li><a href="policy.html">FAQ</a></li>
+                        <li><a href="policy.html">Shipping</a></li>
+                        <li><a href="policy.html">Returns</a></li>
+                        <li><a href="policy.html">Order Status</a></li>
+                        <li><a href="policy.html">Payment Option</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Follow Us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

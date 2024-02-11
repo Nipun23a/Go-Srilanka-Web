@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap');
+@font-face {
+    font-family: "farsan-regular";
+    src: url(Farsan-Regular.ttf);
+    src: url(farsan-regular-webfont.woff)format("woff");
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("Background\ 3.jpg")no-repeat center fixed;
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat, no-repeat;
+   
+    background-position: left top, right top;
+}
+.logo{
+    
+    font-family: "farsan-regular";
+    font-size: 2rem;
+    margin-left: 0px;
+    bottom: -100px;
+    font-weight: bold;
+}
+#logo_pic{
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.navigationbar li{
+    list-style: none;
+}
+.navigationbar a{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.navigationbar a:hover{
+    color: orange;
+}
+header{
+    background-color: #24262b;
+    position: relative;
+    padding: 0 2rem;
+    top:-20px ;
+    bottom: 100px;
+}
+.logo_pic{
+    top: 15px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.navigation{
+    width: 100%;
+    height: 70px;
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigationbar{
+    height: 15px;
+    display: flex;
+    gap: 3rem;
+}
+.toggle_button{
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.toggle_button:hover{
+    scale:1.05;
+    color: #ffffff;
+}
+.toggle_button:active{
+    scale: 0.95;
+}
+/* Responsive Design*/
+@media(max-width:992px)  {
+    .navigationbar{
+       display: none;
+    }
+    .toggle_button{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+.description{
+    
+        width: fit-content;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+      }
+#datetime{
+    position: relative;
+    right: -1290px;
+    width: 10px;
+    height: 12px;
+    height: 12px;
+    border: 0px ;
+    
+}
+#date_time{
+    position: relative;
+    right: -1000px;
+    width: 10px;
+    height: 12px;
+    height: 12px;
+    border: 0px ;
+    
+}
+.photo_main_section{
+    height: 100px;
+    max-width: fit-content;
+        padding: 100px;
+        border: 1px solid gray;
+        margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: transparent;
+    align-items: center;
+}
+.container{
+    display: flex;
+
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+img{
+    height: 400px;
+    width: 400px;
+    border-radius:3px;
+}
+.intro{
+    height: 200px;
+    width: 400px;
+    padding: 6px;
+    box-sizing:border-box ;
+    position: absolute;
+    bottom: -400px;
+    background:rgb(27, 27,27, .5);
+    color: white;
+    transition: 1s;
+    max-width: fit-content;
+
+}
+h5{
+    margin: 10px;
+    font-size: 40px;
+     
+}
+.photo_description{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 1px;
+    bottom: 1px;
+    background: black;
+
+}
+.card:hover .photo_description{
+    opacity: 1;
+    visibility: visible;
+
+}
+.card:hover .img{
+    transform: scale(1.1) rotate(-3deg);
+}
+.end-home{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #24262b;
+    line-height: 1.5;
+    font-family: 'Roboto Mono', monospace;}
+
+.footer_container{
+    max-width: 1170px;
+    margin:auto;
+
+}
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 200px;
+}
+.footer_ul{
+    list-style: none;
+    padding-left: 1px;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 10px ;
+    max-width: fit-content;
+}
+.footer_col{
+    width: 23%;
+    padding:1px;
+}
+.footer_col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.footer_col h4::before{
+    content:"" ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer_col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all .3s ease;
+}
+.footer_col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer_col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.main_store{
+    background: url(images/dalada-maligwa.jpg);
+    background-size: cover ;
+    background-position: center;
+    max-width: fit-content;
+   max-width: fit-content;
+}
+#store_topic{
+    font-family: 'Unbounded', cursive;
+
+}
+.main_store h6{
+    font-family:'Unbounded', cursive ;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 25%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+
+  .navigationbar li i{
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+  
+
+

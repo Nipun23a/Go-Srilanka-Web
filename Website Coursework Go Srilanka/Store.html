@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serandib-Shopping Cart</title>
+    <script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>    
+    <header>
+        <p><span id="datetime">Date/Time:</span></p>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleString();
+            </script> 
+        <div class="navigation">
+            <div class="logo">
+                <img src="logo.png" class="logo_pic">
+            
+            
+        </div>
+        <ul class="navigationbar">
+            <li><a href="home1.html"> Home </a></li>
+            <li><a href="feedback.html">Queries</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Photo Gellery</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="login_form.html">Login</a></li>
+            <li><i class="fa-solid fa-bag-shopping fa-lg add-cart" id="cart-icon" style="color: #ffffff;"></i></li>
+        </ul>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <!--Remove Cart-->
+                    <i class="fa-solid fa-trash-alt cart-remove"></i>
+                </div>
+            </div>
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!--Buy Button-->
+            <a href="customer-information.html" class="btn-buy">Buy Now</a>
+            <!--Cart Close -->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <br><br><br>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="images/Store/BRASS_BOWL_“SWAN.jpg" class="produvt-img" alt="Brass swan">
+                <h2 class="product-title">BRASS BOWL SWAN</h2>
+                <span class="price">$25.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/CINNAMON TRAVELLERS PACK.jpg" class="produvt-img" alt="CINNAMON TRAVELLERS PACK">
+                <h2 class="product-title">CINNAMON TRAVELLERS PACK</h2>
+                <span class="price">$60.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/BLUE_TOPAZ_OCTAGON_SHAPE.jpg" class="produvt-img" alt="BLUE TOPAZ OCTAGON SHAPE">
+                <h2 class="product-title">BLUE TOPAZ OCTAGON SHAPE</h2>
+                <span class="price">$10,000.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/BLUE_SAPPHIRE_CUSHION_CUT.jpg" class="produvt-img" alt="BLUE SAPPHIRE CUSHION CUT">
+                <h2 class="product-title">BLUE SAPPHIRE CUSHION CUT</h2>
+                <span class="price">$10,500.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/Batik-Frock-Materials-ceylone.lk-d3.jpg" class="produvt-img" alt="Batik-Frock-Materials-ceylone.lk-d3">
+                <h2 class="product-title">Batik Frock Materials</h2>
+                <span class="price">$40.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/Batik-Frock-Materials-ceylone.lk-d1-600x575.jpg" class="produvt-img" alt="Batik-Frock-Materials-ceylone.lk-d1-600x575">
+                <h2 class="product-title">Batik Frock Materials</h2>
+                <span class="price">$45.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/ASSORTED SRILANKAN_SPICES_PACK_IN_WOODEN_BOX.jpg" class="produvt-img" alt="ASSORTED SRILANKAN SPICES PACK IN WOODEN BOX">
+                <h2 class="product-title">ASSORTED SRILANKAN SPICES PACK IN WOODEN BOX</h2>
+                <span class="price">$60.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/AMETHYST ROUND SHAPE.jpg" class="produvt-img" alt="AMETHYST ROUND SHAPE">
+                <h2 class="product-title">AMETHYST ROUND SHAPE</h2>
+                <span class="price">$11,000.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/306A1799-300x300.jpg" class="produvt-img" alt="Ceylon Tea">
+                <h2 class="product-title">Ceylon Tea</h2>
+                <span class="price">$40.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="images/Store/306A1778-300x300.jpg" class="produvt-img" alt="Brass sword">
+                <h2 class="product-title">Brass Sword</h2>
+                <span class="price">$100.00</span><br>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            
+        </div>
+
+    </section>
+    <script src="store1.js"></script>
+    <footer>
+    <div class="end-home">
+        <div class="footer_container">
+            <div class="footer_row">
+                <div class="footer_col">
+                    <h4>Company</h4>
+                    <ul class="footer_ul">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="policy.html">Our Service</a></li>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Editor Page</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Get Help</h4>
+                    <ul class="footer_ul">
+                        <li><a href="policy.html">FAQ</a></li>
+                        <li><a href="policy.html">Shipping</a></li>
+                        <li><a href="policy.html">Returns</a></li>
+                        <li><a href="policy.html">Order Status</a></li>
+                        <li><a href="policy.html">Payment Option</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Follow Us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

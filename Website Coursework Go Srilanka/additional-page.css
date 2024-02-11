@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Yellowtail&display=swap');
+*{
+    
+    font-family: "Poopins",sans-serif;    
+    margin: 2;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    }
+body{
+    background-image: url('Background 3.jpg') ;;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-topic{
+    margin: .5em auto;
+    padding: .5em;
+    box-sizing: border-box;
+    width: 15em;
+    text-align: center;
+    
+}
+.main-topic{
+    font-family: 'Alkatra', cursive;
+    max-width: 10em;
+    margin: auto auto;
+
+      cursor: pointer;
+}
+.main-topic:hover{
+    cursor: pointer;
+}
+.u-hover--main {
+ 
+    box-sizing: border-box;
+    position: relative;
+    padding: 0.75em;
+}
+.u-hover--main::before{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    border-top: 0.2em solid maroon ;
+    border-bottom: 0.2em solid maroon;
+    transform: scale3d(0,1,1)
+}  
+.u-hover--main::after{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center; 
+    border-left: 0.2em solid maroon;
+    border-right: 0.2em solid maroon;
+    transform: scale3d(1,0,1);
+}
+.u-hover--main:hover::before{
+    transform: scale3d(1,1,1);
+    transition: transform 900ms;
+}
+.u-hover--main:hover::after{
+    transform: scale3d(1,1,1);
+    transition: transform 900ms;
+}
+
+.container{
+    width: 100%;
+}
+.main-sub{
+    
+    margin-left: 100px;
+    margin-top: 150px;
+    display: flex;
+    gap: 280px;
+}
+.sub-container{
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 20px; 
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition:0.3s ease opacity, 0.7s ease transform, 0.5s ease color;
+}
+.sub-topic{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+}
+.description{
+    color: white;
+
+}
+.video-container {
+    width: 600px;
+    height: 600px;
+    max-height: 100%;
+    display: flex;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background: transparent;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: 50vw;
+    transform: translate(-50%);
+}
+.video-container video{
+    display: flex;
+    justify-content: center;
+}
+.sub-container:hover{
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+}

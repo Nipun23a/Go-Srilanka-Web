@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home1.css">
+    <style>
+        .container1{
+           max-width: 100%; 
+            height: 100vh;
+            background-image: url("Background 3.jpg");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            background-repeat: no-repeat, no-repeat;
+   
+    background-position: left top, right top;
+        }
+
+        .form-box{
+            width: 90%;
+            max-width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #ffff;
+            padding: 50px 60px 70px;
+            text-align: center;
+
+        }
+        .form-box h1{
+            font-size: 30px;
+            margin-bottom: 60px;
+            color:#3c00a0 ;
+            position: relative;
+
+        }
+        .form-box h1::after{
+            content: "";
+            width: 30px;
+            height: 4px;
+            border-radius: 3px;
+            background: #3c00a0;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .input-field{
+            background: #eaeaea;
+            margin: 15px 0;
+            border-radius: 3px;
+            display:flex ;
+            align-items: center;
+            max-height: 65px;
+            transition: max-height 0.5s;
+            overflow: hidden;
+        }
+        input{
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 18px 18px;
+        }
+        .input-field i{
+            margin-left: 15px;
+            font-size: 13px;
+
+        }
+        form p{
+            text-align: left;
+            font-size: 13px;
+        }
+        form p a{
+            text-decoration: none;
+            color: #3c00a0;
+        }
+        #or{
+            text-align: center;
+
+        }
+        .login_social{
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+             margin: 0;
+            padding: 0;
+        }
+        .btn-field{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-field button{
+            flex-basis: 48%;
+            background: #3c00a0;
+            color:#ffff;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: color 1s;
+        }
+        .input-group{
+            height:280px ;
+        }
+        .btn-field button.disable{
+            background: #3c00a0;
+            color: #555;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="header-footer.css">
+        <title>Home-Serendib</title>
+        <script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="container">
+        <header>
+            <p><span id="datetime">Date/Time:</span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                </script> 
+            <div class="navigation">
+            <div class="logo">
+                <img src="2.png" class="logo_pic">
+                
+                
+            </div>
+            <ul class="navigationbar">
+                <li><a href="home1.html"> Home </a></li>
+                <li><a href="feedback.html">Queries</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="svg.html">Sitemap</a></li>
+                <li><a href="New folder (2)/Gallery.html">Photo Gellery</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><i class="fa-solid fa-bag-shopping fa-lg" style="color: #ffffff;"></i></li>
+            </ul>
+        </header>
+    <div class="container1">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user fa-lg" style="color: #000000;"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope fa-lg" style="color: #000000;"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock fa-lg" style="color: #000000;"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>Lost password <a href="#">Click Here!</a></p>
+                    <p id="or">OR</p>
+                    <p id="login">Login with</p>
+                    <br>
+                    <ul class="login_social">
+                        <li><a href="#"><i class="fa-brands fa-square-facebook fa-xl" style="color:black";></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google fa-xl" style="color:black;"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: black;" ></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: black;"></i></a></li>
+                    </ul>
+                </div>
+                <br><br>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn"class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let signupBtn=document.getElementById("signupBtn");
+        let signinBtn=document.getElementById("signinBtn");
+        let nameField=document.getElementById("nameField");
+        let title=document.getElementById("title");
+
+        signinBtn.onclick=function(){
+            nameField.style.maxHeight="0";
+        }
+    </script>
+     <div class="end-home">
+        <div class="footer_container">
+            <div class="footer_row">
+                <div class="footer_col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer_ul">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="questions.html">Question</a></li>
+                        <li><a href="svg.html">Sitemap</a></li>
+                        <li><a href="Store.html">Store</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Company</h4>
+                    <ul class="footer_ul">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="policy.html">Our Service</a></li>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Get Help</h4>
+                    <ul class="footer_ul">
+                        <li><a href="policy.html">FAQ</a></li>
+                        <li><a href="policy.html">Shipping</a></li>
+                        <li><a href="policy.html">Returns</a></li>
+                        <li><a href="policy.html">Order Status</a></li>
+                        <li><a href="policy.html">Payment Option</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Follow Us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

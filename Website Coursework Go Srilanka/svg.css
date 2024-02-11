@@ -1,0 +1,43 @@
+.Sitemap{
+    font-size: 35px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 50%;
+    padding: 5px;
+    background-color: chartreuse;
+}
+.sitemap{
+    width: fit-content;
+    height: 650px;
+    margin: auto;
+}
+.container{
+    height: 90%;
+}
+.svg{
+    margin: auto;
+}
+.button_rect rect{
+    fill: #2fe0dd;
+    transition: fill 0.4s, stroke 0.5s;
+    stroke: midnightblue;
+    stroke-width: 4px;
+}
+.button_rect:hover rect{
+    fill: orange;
+    cursor: pointer;
+}
+.text_button{
+    font-weight: 1000;
+    text-align: center;
+}
+.text_button:hover{
+    cursor: pointer;
+}
+line{
+    stroke: black;
+    stroke-width: 10px;
+}
+a{
+    color: black;
+}

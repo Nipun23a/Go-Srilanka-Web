@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="logo.png"/>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="home_style.css"  >
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.login_sociallinks{
+  display: flex;
+  list-style-type: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0;
+  opacity: 0.95;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 5px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 10px;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+
+.hide-md-lg {
+  display: none;
+}
+
+
+.bottom-container {
+  text-align: left;
+  background-color: #ebb052;
+  border-radius: 0px 0px 2px 2px;
+}
+.footer{
+  margin-top: auto;
+  position: fixed;
+}
+
+@media screen and (max-width: 650px) {
+  
+  
+  .vl {
+    display: none;
+  }
+  
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <p><span id="datetime">Date/Time:</span></p>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script> 
+    <div class="navigation">
+    <div class="logo">
+        
+        <a href="home.html">GO Srilanka</a>
+        
+    </div>
+    <ul class="navigationbar">
+        <li><a href="home.html"> Home </a></li>
+        <li><a href="feedback.html">Queries</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Photo Gellery</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="login_form.html">Login</a></li>
+    </ul>
+    </div>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<footer>
+  <div class="end-home">
+      <div class="footer_container">
+          <div class="footer_row">
+              <div class="footer_col">
+                  <h4>Company</h4>
+                  <ul class="footer_ul">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="policy.html">Our Service</a></li>
+                      <li><a href="policy.html">Privacy Policy</a></li>
+                  </ul>
+              </div>
+              <div class="footer_col">
+                  <h4>Get Help</h4>
+                  <ul class="footer_ul">
+                      <li><a href="policy.html">FAQ</a></li>
+                      <li><a href="policy.html">Shipping</a></li>
+                      <li><a href="policy.html">Returns</a></li>
+                      <li><a href="policy.html">Order Status</a></li>
+                      <li><a href="policy.html">Payment Option</a></li>
+                  </ul>
+              </div>
+              <div class="footer_col">
+                  <h4>Follow Us</h4>
+                  <div class="social-link">
+                      <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                      <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </footer>
+</body>
+</html>

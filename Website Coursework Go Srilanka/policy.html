@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+<meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="home_style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <style>
+            .privacy{
+                padding-left: 1px;
+            }
+            h2{
+                font-size:50px;
+                font-weight: bold;
+                color: blue;
+            }
+            p{
+                font-size: 25px;
+            }
+            ul{
+                font-size: 30px;
+            }
+        </style>
+        <title>Company Policicies</title>
+    </head>
+    <body>
+        <header>
+            <p><span id="datetime">Date/Time:</span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                </script> 
+            <div class="navigation">
+            <div class="logo">
+                
+                <a href="home.html">GO Srilanka</a>
+                
+            </div>
+            <ul class="navigationbar">
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="feedback.html">Queries</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Photo Gellery</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login_form.html">Login</a></li>
+            </ul>
+            </div>
+        </header>
+            <script>
+                const toggleBtn=document.querySelector(".toggle_button")
+                const toggleBtnIcon=document.querySelector(".toggle_button i")
+                const dropDownMenu=document.querySelector('.dropdown_menu')
+    
+                toggleBtn.onclick=function(){
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen=dropDownMenu.classList.contains('open')
+    
+                    toggleBtnIcon.classList=isOpen
+                    ? 'fa-solid fa-xmark'
+                    :'fa-solid fa-bars'
+                }
+            </script>
+        <div class="privacy">
+        <h2>What Personal Information About Customers Does GOSrilanka Collect?</h2>
+        <p>We collect your personal information in order to provide and continually improve our products and services.</p>
+        <p>Here are the types of personal information we collect:</p>
+        <br><br>
+        <ul>
+            <li><b>Information You Give Us:</b><p> We receive and store any information you provide in relation to<br>
+                GOSrilanka Services.You can choose not to provide certain information, but then you might not be able to take advantage of many of our GOSrilanka Services.</p></li>
+                <li><b>Automatic Information:</b><p>We automatically collect and store certain types of information about your use of GOSrilanka Services, including information about your interaction with products, content, and services available through GOSrilanka Services. Like many websites, we use "cookies" and other unique identifiers, and we obtain certain types of information when your web browser or device accesses GOSrilanka Services and other content served by or on behalf of GOSrilanka on other websites. Our physical stores may use cameras, computer vision, sensors, and other technology to gather information about your activity in the store, such as the products and services you interact with.
+
+                 </p></li>
+                 <li>Information from Other Sources:<p>We might receive information about you from other sources, such as updated delivery and address information from our carriers, which we use to correct our records and deliver your next purchase more easily. </p></li>    
+            </ul>
+            <h2>Does GOSrilanka Share Your Personal Information?</h2>
+            <p>Information about our customers is an important part of our business, and we are not in the business of selling our customers' personal information to others. We share customers' personal information only as described below and with subsidiaries GOSrilanka.com, Inc. controls that either are subject to this Privacy Notice or follow practices at least as protective as those described in this Privacy Notice.</p>
+            <ul>
+                <li>We work to protect the security of your personal information during transmission by using encryption protocols and software. </li>
+                <li>We follow the Payment Card Industry Data Security Standard (PCI DSS) when handling credit card data. </li>
+                <li>We maintain physical, electronic, and procedural safeguards in connection with the collection, storage, and disclosure of customer personal information. Our security procedures mean that we may ask to verify your identity before we disclose personal information to you.</li>
+                <li>Our devices offer security features to protect them against unauthorized access and loss of data. You can control these features and configure them based on your needs.</li>
+                <li>It is important for you to protect against unauthorized access to your password and to your computers, devices, and applications. We recommend using a unique password for your Amazon account that is not used for other online accounts. Be sure to sign off when finished using a shared computer</li>
+            </ul>
+            <h2>Shipping Policies</h2>
+            <ul>
+                <li>Customs and tariffs: International shipments may be subject to customs duties or tariffs, and online stores need to provide accurate information about the value and nature of the products being shipped to avoid customs issues.</li>
+                
+                <li>Delivery times: Deliver times may be change  country to country.but normally it get 2 weeks after the order placed.</li>
+        
+                <li>Returns and Refunds: If your products damaged or anything happend to product please contact our customer care via email we will contact you.</li>
+                
+                <li>Shipping Labels: When we are delivering product we provide a ceratain tracking number for your package.and will tracking number share with your personal email address.</li>
+            </ul>
+            </div>
+            <br><br>
+            <footer>
+                <div class="end-home">
+                    <div class="footer_container">
+                        <div class="footer_row">
+                            <div class="footer_col">
+                                <h4>Company</h4>
+                                <ul class="footer_ul">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="policy.html">Our Service</a></li>
+                                    <li><a href="policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_col">
+                                <h4>Get Help</h4>
+                                <ul class="footer_ul">
+                                    <li><a href="policy.html">FAQ</a></li>
+                                    <li><a href="policy.html">Shipping</a></li>
+                                    <li><a href="policy.html">Returns</a></li>
+                                    <li><a href="policy.html">Order Status</a></li>
+                                    <li><a href="policy.html">Payment Option</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_col">
+                                <h4>Follow Us</h4>
+                                <div class="social-link">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                                    <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </footer>
+        </body>
+</html>

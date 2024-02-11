@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="header-footer.css">
+<script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+body {font-family: Arial, Helvetica, sans-serif;}
+body{
+    background: lightgray;}
+* {
+  margin: 0;
+  padding:0 ;
+}
+.container{
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+#main_name{
+  text-align: center;
+  font-family: 'Alkatra', cursive;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <p><span id="datetime">Date/Time:</span></p>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script> 
+    <div class="navigation">
+    <div class="logo">
+        <img src="logo.png" class="logo_pic">
+        
+        
+    </div>
+    <ul class="navigationbar">
+        <li><a href="home1.html"> Home </a></li>
+        <li><a href="feedback.html">Queries</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="New folder (2)/Gallery.html">Photo Gellery</a></li>
+        <li><a href="Store.html">Store</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><i class="fa-solid fa-bag-shopping fa-lg" style="color: #ffffff;"></i></li>
+    </ul>
+</header>
+
+<h2 id="main_name"> <b> Feedback Form </b> </h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Travel Destination"> Travel Destination</label>
+    <select id="Travel Destination" name="Travel Destination">
+      <option value="sigiriya">Sigiriya</option>
+      <option value="mirissa beach">Mirissa Beach</option>
+      <option value="kandy">Kandy</option>
+    </select>
+
+    <label for="Feedback">Feedback</label>
+    <textarea id="Feedback" name="Feedback" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br><br><br><br><br><br>
+<footer>
+  <div class="end-home">
+    <div class="footer_container">
+        <div class="footer_row">
+            <div class="footer_col">
+                <h4>Company</h4>
+                <ul class="footer_ul">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="policy.html">Our Service</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="#">Editor Page</a></li>
+                </ul>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="footer_col">
+                <h4>Get Help</h4>
+                <ul class="footer_ul">
+                    <li><a href="policy.html">FAQ</a></li>
+                    <li><a href="policy.html">Shipping</a></li>
+                    <li><a href="policy.html">Returns</a></li>
+                    <li><a href="policy.html">Order Status</a></li>
+                    <li><a href="policy.html">Payment Option</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Follow Us</h4>
+                <div class="social-link">
+                    <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

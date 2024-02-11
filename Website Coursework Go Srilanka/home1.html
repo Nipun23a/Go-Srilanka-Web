@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <title>Home-Serendib</title>
+    <script src="https://kit.fontawesome.com/57dbd5b020.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <p><span id="datetime">Date/Time:</span></p>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleString();
+            </script> 
+        <div class="navigation">
+        <div class="logo">
+            <img src="logo.png" class="logo_pic">
+            
+            
+        </div>
+        <ul class="navigationbar">
+            <li><a href="home1.html"> Home </a></li>
+            <li><a href="feedback.html">Queries</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="New folder (2)/Gallery.html">Photo Gellery</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><i class="fa-solid fa-bag-shopping fa-lg" style="color: #ffffff;"></i></li>
+        </ul>
+    </header>
+    <br><br><br><br>
+    <div class="row">
+        <div class="col">
+            <h1>Welcome To Island Nation</h1>
+            <br><br><br>
+            <p id="introduction">We warmly welcome to  the Iland nation.</p>
+            <button id="explore"><a href="New folder (2)/Gallery.html">Explore Now</a></button>
+        </div>
+        <div class="col">
+            <div class="card card1">
+                <h5>Mirissa Coconut Hills</h5>
+                <p>World Beautiful Tourist Attractionn Beach Side In Srilanaka</p>
+            </div>
+            <div class="card card2">
+                <h5>Willpattu</h5>
+                <p>World Beautiful Tourist Attractionn Beach Side In Srilanaka</p>
+            </div>
+            <div class="card card3">
+                <h5>Nine Arch bridge</h5>
+                <p>World Beautiful Tourist Attractionn Beach Side In Srilanaka</p>
+            </div>
+            <div class="card card4">
+                <h5>Sigiriya</h5>
+                <p>World Beautiful Tourist Attractionn Beach Side In Srilanaka</p>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="main_store">
+    <h ref="store.html"><h1 id="store_topic">Visit Our Unique Store</h1></h>
+    <h3 id="hot_deals">Hot Deals.</h3>
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+    <swiper-slide><img src="images/Store/BRASS BOWL “SWAN.jpg">BRASS BOWL “SWAN”</swiper-slide>
+    <swiper-slide><img src="images/Store/306A1799-300x300.jpg">CEYLON CINNAMON STICKS WITH POWDER IN METAL CAN</swiper-slide>
+    <swiper-slide><img src="images/Store/306A1797-300x300.jpg">BRASS CASKET</swiper-slide>
+    <swiper-slide><img src="images/Store/306A1866-300x300.jpg">ELEPHANT PRINTED POCILAIN MUG</swiper-slide>
+    <swiper-slide><img src="images/Store/306A1865-300x300.jpg">ELEPHANT STATUE</swiper-slide>
+    <div class="autoplay-progress" slot="container-end">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </swiper-container>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+
+    const swiperEl = document.querySelector("swiper-container");
+    swiperEl.addEventListener("autoplaytimeleft", (e) => {
+      const [swiper, time, progress] = e.detail;
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    });
+  </script>
+    <footer>
+  <div class="end-home">
+    <div class="footer_container">
+        <div class="footer_row">
+            <div class="footer_col">
+                <h4>Company</h4>
+                <ul class="footer_ul">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="policy.html">Our Service</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="#">Editor Page</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Get Help</h4>
+                <ul class="footer_ul">
+                    <li><a href="policy.html">FAQ</a></li>
+                    <li><a href="policy.html">Shipping</a></li>
+                    <li><a href="policy.html">Returns</a></li>
+                    <li><a href="policy.html">Order Status</a></li>
+                    <li><a href="policy.html">Payment Option</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Follow Us</h4>
+                <div class="social-link">
+                    <a href="#"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

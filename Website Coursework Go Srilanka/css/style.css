@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    outline: none;
+}
+body{
+    font-family: "Lato", sans-serif;
+    background-image: url("../img/6.svg");
+    background-size: cover; 
+    min-height: 100vh;
+}
+.container{
+    margin-top: 50px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.home-box h1{
+    color: #1da3dd;
+    font-size: 32px;
+    text-align: center;
+}
+
+.home-box h2{
+    color: #424242;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+    text-align: none;
+}
+
+.home-box ul{
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    font-weight: 400;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.home-box ul li{
+    margin-top: 5px;
+
+}
+.home-box .btn{
+    margin-top: 20px;
+
+}
+.btn{
+    background-color: #1da3dd;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    text-align: center ;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+ 
+}
+/*question page css start*/
+
+.box{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0,2);
+    min-height: 350px;
+    width: 550px;
+    padding: 50px;
+}
+.hide{
+    display: none;
+}
+
+/*.box.hide{*/
+/*    display: none;*/
+/*}*/
+
+.quiz-box .header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.quiz-box .Question-number-Box{
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: 1px solid #444;
+    color: #444;
+
+}
+
+.quiz-box .timerBox{
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: 1px solid #444;
+    color: #444;
+}    
+
+.quiz-box .questionBox{
+    background-color: #1da3dd;
+    color: #fff;
+    border-radius: 400px;
+    padding: 10px 15px;
+}
+
+.quiz-box .optionBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    grid-gap: 15px;
+
+}
+.quiz-box .optionBox .option{
+    background-color: #ccc;
+    border-radius: 10px;
+    color: #444;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+
+}
+.quiz-box .optionBox .option.already-answered{
+    pointer-events: none;
+
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.quiz-box .optionBox .option.correct::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards
+    
+}
+@keyframes sslideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+.quiz-box .optionBox .option.wrong::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards
+    
+}
+
+.quiz-box .optionBox .option.wrong{
+    color:#ffffff;
+
+}
+.quiz-box .optionBox .option.correct{
+    color:#ffffff;
+
+}
+.quiz-box .btn{
+    margin: 15px 0;
+    
+
+}
+
+.resultBox{
+    text-align: center;
+ 
+}
+.resultBox h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #46c8ff;
+}
+.resultBox table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.resultBox table td{
+    border:1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 50%;
+    text-align: left;
+    font-size: 15px;
+}
+.resultBox .message {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+  
+.resultBox .message.pass {
+    background-color: green;
+}
+  
+.resultBox .message.fail {
+    background-color: red;
+}
+  
+
+@media screen and(max-width: 768px){
+    .custom-box,
+    .box{
+        width: 425px;
+    }
+    .optionBox{
+        grid-template-columns: 1fr;
+    }
+}    
+
+
+
+
+
+
+
+
+

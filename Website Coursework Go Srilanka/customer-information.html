@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        *{
+            font-family: "Poopins" ,sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+        body{
+            background-image: url('Background 3.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: initial;
+        }
+        .customer-function{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            min-height: 100vh;
+            padding-bottom: 70px;
+        }
+        .customer-function form{
+            padding: 20px;
+            width: 700px;
+            background-color: white;
+            box-shadow: 0 5px 10px  rgba(0, 0, 0, .1);
+        }
+        .customer-function form .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            
+        }
+
+        .customer-function form  img{
+            width: 45px;
+        }
+        .customer-function form .row .col .title-customer{
+            font-size: 20px;
+            color: #333;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .inputBox-customer{
+            margin: 15px 0;
+        }
+        .customer-function form .row .col .inputBox-customer span{
+            margin-bottom: 10px;
+            display: block;
+        }
+        button{
+            display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background:greenyellow;
+    color:black ;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 20px;
+        }
+    .button:hover{
+    color:orange;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="customer-function">
+        <form action="form.php" >
+            <div class="row-customer">
+                <div class="col-customer">
+                    <h3 class="title-customer">Billing</h3>
+                    <div class="inputBox-customer">
+                        <span>Cards Accepted:  </span>
+                        <div class="card-images">
+                            <img src="images/Free-Credit-Card-Logo-8.png" alt="">
+                            <img src="images/Free-Credit-Card-Logo-32.png" alt="">
+                            <img src="images/Free-Credit-Card-Logo-50.png" alt="">
+                            <img src="images/Free-Credit-Card-Logo-56.png" alt="">
+                        </div>
+                     </div>
+                     <div class="inputBox-customer">
+                        <span >Card Number: </span>
+                        <input type="text" placeholder="1111-2222-3333-4444" id="card-number">
+                        <span >CVV: </span>
+                            <input type="text" placeholder="1234" id="cvv">
+                    </div>
+                    <div class="inputBox-customer">
+                        <span >Expire Month: </span>
+                        <input type="text" placeholder=" 02" id="exp-month">
+                        <span >Exp Year: </span>
+                            <input type="number" placeholder="2023" id="exp-year">
+                    </div>
+                    <div class="inputBox-customer">
+                        <span >Full Name: </span>
+                        <input type="text" placeholder=" Sunil Lakmal" id="name">
+                    </div>
+                    <div class="inputBox-customer">
+                        <span >Email: </span>
+                        <input type="email" placeholder="example113@gmail.com" id="email">
+                    </div>
+                    <div class="inputBox-customer">
+                        <span >Address: </span>
+                        <input type="text" placeholder="197/A,Pamunugama road,nugegoda" id="address">
+                    </div>
+                    <div class="inputBox-customer">
+                        <span>City: </span>
+                        <input type="text" placeholder="Nugegoda" id="city">
+                    </div>
+                    <div class="inputBox-customer">
+                        <span>Postal Code: </span>
+                        <input type="text" placeholder="123456" id="postal-code">
+                    </div>
+
+
+
+                </div>
+            </div>
+            <button class="checkout-button" onclick="showMessage()">Proceed To Checkout</button>
+        </form>
+        
+
+    </div>
+    <script>
+        function showMessage(){
+            alert('Your payment success')
+        }
+    </script>
+</body>
+</html>
